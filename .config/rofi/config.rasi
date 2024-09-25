@@ -1,0 +1,13 @@
+configuration {
+	display-drun: " Search:";
+	display-window: "Windows:";
+	display-keys: "Keybinds:";
+	drun-display-format: "{icon} {name}";
+	font: "JetBrainsMono Nerd Font 10";
+	modi: "window,run,drun,keys";
+	show-icons: true;
+	icon-theme: "Papirus";
+	location: 8;
+}
+
+@theme "/home/gabe/.config/rofi/theme.rasi"
