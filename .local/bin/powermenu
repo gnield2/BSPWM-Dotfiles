@@ -1,0 +1,12 @@
+#! /bin/sh
+
+chosen=$(printf "Lock\nSleep\nRestart\nShutdown\nLogout" | rofi -dmenu -config "~/.config/rofi/powermenu-config.rasi")
+
+case "$chosen" in
+	"Lock") lockscreen ;;
+	"Sleep") systemctl suspend ;;
+	"Restart") reboot ;;
+	"Shutdown") poweroff ;;
+	"Logout") bspc quit ;;
+	*) exit 1 ;;
+esac
